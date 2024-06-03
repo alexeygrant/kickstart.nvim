@@ -1,0 +1,9 @@
+vim.cmd([[ let g:neo_tree_remove_legacy_commands = 1 ]])
+
+return {
+    "ggandor/leap.nvim",
+    dependencies = { 'tpope/vim-repeat', },
+    config = function()
+      require("leap").add_default_mappings(true)
+    end,
+}
