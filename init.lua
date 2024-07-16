@@ -277,19 +277,20 @@ require('lazy').setup({
     'folke/which-key.nvim',
     event = 'VimEnter', -- Sets the loading event to 'VimEnter'
     config = function() -- This is the function that runs, AFTER loading
-      require('which-key').setup()
-      -- Document existing key chains
-      require('which-key').add {
-        { '<leader>c', desc = '[C]ode' },
-        { '<leader>d', desc = '[D]ocument' },
-        { '<weader>r', desc = '[R]ename' },
-        { '<leader>s', desc = '[S]earch' },
-        { '<leader>w', desc = '[W]orkspace' },
-        { '<leader>t', desc = '[T]oggle' },
-        { '<leader>h', desc = 'descGit [H]unk' },
-        -- visual mode
-        { '<leader>h', desc = 'Git [H]unk', mode = 'v' },
-      }
+      local wk = require 'which-key'
+      wk.setup()
+        -- Document existing key chains
+        wk.add {
+          { '<leader>c', desc = '[C]ode' },
+          { '<leader>d', desc = '[D]ocument' },
+          { '<weader>r', desc = '[R]ename' },
+          { '<leader>s', desc = '[S]earch' },
+          { '<leader>w', desc = '[W]orkspace' },
+          { '<leader>t', desc = '[T]oggle' },
+          { '<leader>h', desc = 'descGit [H]unk' },
+          -- visual mode
+          { '<leader>h', desc = 'Git [H]unk', mode = 'v' },
+        }
     end,
   },
 
