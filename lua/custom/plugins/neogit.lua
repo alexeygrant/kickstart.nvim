@@ -9,4 +9,7 @@ return {
     -- 'ibhagwan/fzf-lua', -- optional
   },
   config = true,
+  keys = {
+    { '<leader>gg', ':Neogit<CR>', desc = 'Open neogit' },
+  },
 }
