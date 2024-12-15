@@ -3,6 +3,7 @@
 --
 -- See the kickstart.nvim README for more information
 return {
-  require 'custom.ai_plugins.copilot',
+  -- Include optional plugins
+  require 'custom.plugins.optional.copilot',
   -- require 'custom.ai_plugins.supermaven',
 }
