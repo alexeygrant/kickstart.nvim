@@ -1,6 +1,6 @@
 return {
   'stevearc/oil.nvim',
-  lazy = true,
+  lazy = false,
   event = { 'BufReadPre', 'BufNewFile' },
   opts = {},
   -- Optional dependencies

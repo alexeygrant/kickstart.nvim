@@ -5,8 +5,6 @@ vim.foldenable = true
 
 return {
   'kevinhwang91/nvim-ufo',
-  -- lazy = false,
-  lazy = true,
   dependencies = {
     'kevinhwang91/promise-async',
   },
