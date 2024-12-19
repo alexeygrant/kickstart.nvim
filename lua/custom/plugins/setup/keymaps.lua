@@ -1,6 +1,6 @@
 -- q will emulate Esc in Insert, Normal and Visual modes
-vim.keymap.set({'i', 'v'}, 'q', '<Esc>', {desc = 'Emulate Esc key'})
-vim.keymap.set('n', 'q', ':noh<CR>', {desc = 'No search highlight'})
+vim.keymap.set({ 'i', 'v' }, 'q', '<Esc>', { desc = 'Emulate Esc key' })
+vim.keymap.set('n', 'q', ':noh<CR>', { desc = 'No search highlight' })
 -- Type zz to enter q
 vim.keymap.set('i', 'zz', 'q')
 -- Replace ':' with ';' to enter the command mode for convenience
@@ -9,10 +9,17 @@ vim.keymap.set('n', ':', ';', { desc = 'Swapped : with ;' })
 vim.keymap.set('n', '^', '<Nop>')
 vim.keymap.set('n', 'B', '^', { desc = 'Move to the start of the line (replaced ^)' })
 vim.keymap.set('n', '$', '<Nop>')
-vim.keymap.set('n', 'E', '$', { desc = 'Move to the end of the line (replaced $)'})
+vim.keymap.set('n', 'E', '$', { desc = 'Move to the end of the line (replaced $)' })
 vim.keymap.set('n', 'J', 'mjJ`j', { desc = 'Join lines without losing the current postion' })
 
 -- Workaround for not able to search in hidden files in Telescope
 vim.keymap.set('n', 'sF', '<cmd>Telescope find_files hidden=true<cr>', { desc = 'Search all files including hidden ones' })
+
+-- OS Clipboard interaction
+vim.keymap.set('n', '<leader>y', '"+y', { desc = 'Yank to system clipboard' })
+vim.keymap.set('v', '<leader>y', '"+y', { desc = 'Yank to system clipboard' })
+vim.keymap.set('n', '<leader>Y', '"+Y', { desc = 'Yank line to system clipboard' })
+vim.keymap.set('n', '<leader>p', '"+p', { desc = 'Paste from system clipboard' })
+vim.keymap.set('n', '<leader>P', '"+P', { desc = 'Paste from system clipboard before cursor' })
 
 return {}
