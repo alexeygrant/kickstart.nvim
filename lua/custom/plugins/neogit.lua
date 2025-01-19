@@ -10,6 +10,6 @@ return {
   },
   config = true,
   keys = {
-    { '<leader>gg', ':Neogit<CR>', desc = 'Open neogit' },
+    { '<leader>gi', ':Neogit<CR>', desc = 'Open neogit' },
   },
 }
