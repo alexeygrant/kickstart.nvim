@@ -5,11 +5,11 @@
 
 local prefix = 'custom.plugins.'
 return {
-  -- Setup
-  require(prefix .. 'setup.options'),
-  require(prefix .. 'setup.keymaps'),
+    -- Setup
+    require(prefix .. 'setup.options'),
+    require(prefix .. 'setup.keymaps'),
 
-  -- Optional plugins
-  require(prefix .. 'optional.copilot'),
-  -- require (prefix..'optional.supermaven'),
+    -- Optional plugins
+    -- require(prefix .. 'optional.copilot'),
+    -- require (prefix..'optional.supermaven'),
 }
