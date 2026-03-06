@@ -14,6 +14,11 @@ if status then
       -- Override the default file_ignore_patterns
       file_ignore_patterns = {},
     },
+    pickers = {
+      find_files = {
+        hidden = true,
+      },
+    },
   }
 end
 
